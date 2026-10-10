@@ -1,0 +1,93 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+    --blue: rgb(2, 2, 180);
+    --lightOrange: rgb(255, 170, 52);
+    --yellowing: rgb(201, 201, 110);
+    --teal: rgb(106, 206, 206);
+    --redish: rgb(203, 91, 91);
+    --green: rgb(94, 208, 94);
+
+}
+body{
+    background-color: rgb(245, 162, 234);
+}
+.container{
+    color:var(--white);
+    display:grid;
+    height:200vh;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1fr 1fr .8fr .2fr;
+    gap:0.3rem;
+
+    grid-template-areas:
+    "nav nav nav"
+    "About Experience Education"
+    "Project1 Project2 Project3"
+    "Blog Blog Blog"
+    "footer footer footer"
+
+
+}
+#nav{
+    grid-area: nav;
+    background: var(--blue);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#About{
+    text-align: center;
+    background: var(--green);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Education{
+    grid-area: Education;
+    background: var(--teal);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Experience{
+    grid-area: Experience;
+    background: var(--yellowing);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Project1{
+    grid-area: Project1;
+    background: var(--lightOrange);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Project2{
+    grid-area: Project2;
+    background: var(--lightOrange);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Project3{
+    grid-area: Project3;
+    background: var(--lightOrange);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+#Blog{
+    grid-area: Blog;
+    background: var(--redish);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+footer{
+    grid-area: footer;
+    background: var(--blue);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
