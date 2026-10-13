@@ -31,6 +31,7 @@ body{
 
 }
 #nav{
+    
     grid-area: nav;
     background: var(--blue);
     border-radius: var(--main-radius);
@@ -90,4 +91,25 @@ footer{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width:500px){
+
+    .container{
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr 1fr 1fr 1fr 1fr 1fr .8fr .2fr;
+
+        grid-template-areas:
+        "nav"
+        "About"
+        "Experience"
+        "Education"
+        "Project1"
+        "Project2"
+        "Project3"
+        "Blog"
+        "footer"
+    }
+
 }
