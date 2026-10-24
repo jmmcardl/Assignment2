@@ -1,24 +1,21 @@
 :root{
     --main-radius: 5px;
     --main-padding: 5px;
-    --blue: rgb(2, 2, 180);
-    --lightOrange: rgb(255, 170, 52);
-    --yellowing: rgb(201, 201, 110);
-    --teal: rgb(106, 206, 206);
-    --redish: rgb(203, 91, 91);
-    --green: rgb(94, 208, 94);
+    --blue: rgb(127, 127, 198);
+    --white: rgb(171, 169, 169);
+    --gray: rgb(85, 84, 84);
 
 }
 body{
-    background-color: rgb(245, 162, 234);
+    background-color: var(--gray);
 }
 .container{
     color:var(--white);
     display:grid;
-    height:200vh;
+    height:170vh;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .2fr 1fr 1fr .8fr .2fr;
+    grid-template-rows: .2fr 1fr 1fr .6fr .2fr;
     gap:0.3rem;
 
     grid-template-areas:
@@ -39,43 +36,43 @@ body{
 }
 #About{
     text-align: center;
-    background: var(--green);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Education{
     grid-area: Education;
-    background: var(--teal);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Experience{
     grid-area: Experience;
-    background: var(--yellowing);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Project1{
     grid-area: Project1;
-    background: var(--lightOrange);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Project2{
     grid-area: Project2;
-    background: var(--lightOrange);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Project3{
     grid-area: Project3;
-    background: var(--lightOrange);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
 #Blog{
     grid-area: Blog;
-    background: var(--redish);
+    background: var(--white);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
 }
@@ -84,6 +81,7 @@ footer{
     background: var(--blue);
     border-radius: var(--main-radius);
     padding: var(--main-padding);
+    
 }
 .circle-image {
     width: 100px;
